@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Chemistry Class</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Join Chemistry Class</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <div class="container">
+      <h2 class="text-center">Student Registration Form</h2>
+      <form id="joinForm" class="form-box">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required pattern="[0-9]{10}" />
+
+        <label for="course">Select Course</label>
+        <select id="course" required>
+          <option value="">-- Choose Course --</option>
+          <option value="11-12">11th & 12th Chemistry</option>
+          <option value="neet-jee">NEET / JEE</option>
+          <option value="bsc">B.Sc / M.Sc Chemistry</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="form-msg" class="text-center"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Radical Chemistry Classes. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
